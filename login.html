@@ -1,0 +1,82 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login Form</title>
+<style>
+body {font: Arial;}
+
+form{
+    width: 350px; 
+    padding: 30px;
+    border: 2px solid grey;
+    margin: 100px 50px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 5px 10px;
+    background-color: red;
+}
+
+.container {
+    padding: 10px;  
+} 
+
+span.pword {
+    float: right;
+    padding-top: 8px;
+}
+</style>
+
+<center>
+    <form>
+    <h2>Login Form</h2>
+    <hr>
+    <div class="container">
+        <label style="float: left;" for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label style="float: left;" for="pword"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="pword" required>
+            
+        <button type="submit">Login</button>
+        <label>
+        <input style="float: left; display: block;" type="checkbox" name="remember">
+        </label>
+        <label style="float: left;">   Remember me </label>
+    </div>
+    <!-- to give space -->
+    &nbsp; 
+<hr>
+    <div class="container">
+        <button style="float: left;" type="button" class="cancelbtn">Cancel</button>
+        <span class="pword">Forgot <a href="#">password?</a></span>
+    </div>
+</form>
+</center>
+</body>
+</head>
+</html>
